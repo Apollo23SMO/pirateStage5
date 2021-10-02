@@ -25,7 +25,7 @@ function preload() {
   waterSplashSpritedata = loadJSON("assets/waterSplash/waterSplash.json");
   waterSplashSpritesheet = loadImage("assets/waterSplash/waterSplash.png");
   brokenboatSpritedata = loadJSON("assets/boat/brokenBoat.json");
-  brokenboatSpritesheet = loadImage("assets/boat/brokenBoat.png")
+  brokenboatSpritesheet = loadImage("assets/boat/brokenBoat.png");
 }
 
 function setup() {
@@ -60,12 +60,12 @@ function setup() {
   }
 }
 
-var brokenboatframes = brokenboatSpritedata.frames;
-for (var i = 0; i < brokenboatframes.length; i++) {
-  var pos = brokenboatframes[i].position;
-  var img = brokenboatSpritesheet.get(pos.x, pos.y, pos.w, pos.h);
-  brokenboatanimation.push(img);
-}
+var brokenBoatFrames = brokenboatSpritedata.frames;
+ for (var i = 0; i < brokenBoatFrames.length; i++) {
+    var pos = brokenBoatFrames[i].position;
+     var img = brokenboatSpritesheet.get(pos.x, pos.y, pos.w, pos.h);
+      brokenboatAnimation.push(img); 
+    }
 
 function draw() {
   background(189);
